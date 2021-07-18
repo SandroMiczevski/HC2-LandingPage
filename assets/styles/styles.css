@@ -1,0 +1,9 @@
+.card{
+    width: 300px;
+    display: flex;
+}
+
+.name-lbl
+.email-lbl{
+    width: 100%;
+}
