@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <title>Document</title>
+    <title>Huge sale - Coming</title>
 </head>
 <body>
 
-    <div>
-        <div class="card">
-            <form action="#" method="POST">
-
-                <div class="name-lbl">
-                    <label for="subscription-name">Name: </label>
-                    <input type="text" name="input-name" id="subs-name">
-                </div>  
-
-                <div class="email-lbl"></div>
-                    <label for="subscription-email">Email: </label>
-                    <input type="text" name="input-email" id="subs-email">
-                </div>
-
-                <input type="submit" value="Submit">
-            </form>
+    <section class="menu">
+        <div class="items-menu">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">About us</a>
+            <a href="#" class="menu-item">Contact</a>   
         </div>
-    </div>
+    </section>
+    
+
+    <section class="section-container background-section">
+        <!-- Static background -->
+        <div>
+            <div>
+                <img src="./assets/img/black-friday_WEB.jpg" alt="">
+            </div>
+
+            <div class="section-one-text">
+                <button class="subscribe-btn" onclick="registerBtnClick();">Subscribe</button> to be the first to know about our sales
+            </div>
+        </div>
+    </section>
+ 
+    <section class="form-off" id="form">
+        <!-- Here we will have our card where it will be possible the user registration -->
+        <div class="subscription-form">
+            <button class="close-btn" onclick="registerBtnClick();">Close</button>
+            <div class="inner-subscription-form" id="content">
+                <form id="registration" action="">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="e-mail" id="email">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>All rights reserved. &reg</p>
+    </section>
 
 </body>
+<script src="javascript/script.js"></script>
 </html>
