@@ -14,9 +14,15 @@ html{
     color: white;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+}
+
 .items-menu{
-    height: 30px;
-    padding: 10px;
+   margin: 0px;
+   padding: 10px;
+   font-size: 18px;
 }
 
 .menu-item{
@@ -25,26 +31,74 @@ html{
 }
 
 .footer{
-    padding: 25px;
     text-align: center;
 }
 
+/* Body */
+
+@media (max-width: 290px){
+    .menu,
+    .footer{
+        width: 290px;
+
+    }
+
+    .section-one-text{
+        width: 290px;
+    }
+    
+    .section-container img{
+        width: 290px;
+    }
+}
+
+@media (min-width: 290px){
+    .section-container img{
+        width: 100vw;
+    } 
+}
+
+@media (max-width: 475px){
+    .section-one-text{
+        /* width: max(20vw, 100px); */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .subs-text{
+        margin: 15px;
+    }  
+
+    .menu{
+        justify-content: center;
+    }  
+}
+
+@media (min-width: 475px) {
+    .section-container img{
+        width: 100vw;
+    }   
+}
+
 .section-container{
-    height: 100vh;
+    height: calc(100vh - (100px));
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+
 .background-section{
     background-size: contain;
 }
 
 .section-one-text{
-    margin: 10px;
+    margin: 10px 0px;
     font-size: 20px;
-    width: 100vh;
+    width: 100%;
     text-align: center;
 }
 
